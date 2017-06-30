@@ -228,7 +228,7 @@ export default class Calendar extends Component {
     let subBack = {backgroundColor: subColor};
     let mainFontColor = {color: mainColor};
     let subFontColor = {color: subColor};
-    let isValid = !startDate || endDate;
+    let isValid = !!startDate;
     let isClearVisible = startDate || endDate;
     return (
       <Modal
